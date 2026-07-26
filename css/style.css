@@ -1,0 +1,51 @@
+:root{
+  --bg: #0d0c12;
+  --panel: #17151f;
+  --panel-border: #2a2635;
+  --rail: #35304a;
+  --text: #e7e6e2;
+  --text-dim: #8b8f9c;
+  --text-faint: #565c6b;
+  --accent-add: #a374e8;
+  --accent-add-dim: #34275a;
+  --accent-tag: #c084fc;
+  --accent-tag-dim: #3a2456;
+  --accent-warn: #e8a23d;
+  --focus: #c9a6ff;
+  --radius: 10px;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+html{ color-scheme: dark; }
+
+body{
+  background:
+    radial-gradient(1200px 500px at 15% -10%, rgba(163,116,232,0.08), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  gap: 10px;
+  background-color: black;
+  padding: 15px;
+  position: fixed;
+  z-index: 100;
+}
+
+
+nav > a {
+  color: white;
+  text-decoration: none;
+}
+
+nav > a.current {
+  color: #c9a6ff;
+  text-decoration: underline;
+}
