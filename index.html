@@ -11,42 +11,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/launcher-icon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <nav>
-      <a href="/index.html" class="current">Home</a>
-      <a href="/releases.html">Releases</a>
+      <img src="assets/launcher-icon.png" width="30px" />
+      <a href="index.html" class="current">Home</a>
+      <a href="releases.html">Releases</a>
     </nav>
 
     <div id="root">
       <div class="page">
-
         <!-- hero -->
         <section class="hero">
           <div class="eyebrow">Linux distribution · 0.01 Beta</div>
-          <h1>Vantum.<br><span>Built lean.</span></h1>
+          <h1>Vantum.<br /><span>Built lean.</span></h1>
           <p class="hero-desc">
-            A custom Puppy Linux variant built from Ubuntu Jammy packages.
-            No tray, no panel, no clutter — just a fast, low-footprint desktop
-            for hardware everyone else gave up on.
+            A custom Puppy Linux variant built from Ubuntu Jammy packages. No
+            tray, no panel, no clutter, just a fast, low-footprint desktop for
+            hardware everyone else gave up on.
           </p>
           <div class="hero-actions">
-            <a href="/releases.html" class="btn-primary">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <a href="releases.html" class="btn-primary">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
               Download
             </a>
-            <a href="https://github.com/Hammad-hab/Vantum" class="btn-secondary" target="_blank">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <a
+              href="https://github.com/Hammad-hab/Vantum"
+              class="btn-secondary"
+              target="_blank"
+            >
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
               Source
             </a>
           </div>
         </section>
-
         <!-- stats -->
         <div class="stats">
           <div class="stat">
-            <div class="stat-value">~260 MB</div>
+            <div class="stat-value">~850 MB</div>
             <div class="stat-label">ISO size</div>
           </div>
           <div class="stat">
@@ -63,37 +97,103 @@
           </div>
         </div>
 
+        <!-- carousel -->
+        <div class="section">
+          <div class="section-label">Screenshots</div>
+          <div class="carousel" id="carousel">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-slide">
+                <img
+                  src="https://raw.githubusercontent.com/Hammad-hab/Vantum/ab0e6f7c668e1e8c95f95140a2d56438eb7d95a4/assets/screenshot.png"
+                  width="700px"
+                />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/ss1.png" width="700px" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/ss2.png" width="700px" />
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/ss3.png" width="700px" />
+              </div>
+            </div>
+            <button
+              class="carousel-arrow prev"
+              id="carouselPrev"
+              aria-label="Previous"
+            >
+              ‹
+            </button>
+            <button
+              class="carousel-arrow next"
+              id="carouselNext"
+              aria-label="Next"
+            >
+              ›
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+        </div>
+
         <!-- features -->
         <div class="section">
           <div class="section-label">What's included</div>
           <div class="features">
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
               </div>
               <h3>JWM, no tray</h3>
-              <p>A tuned JWM setup with the traditional panel and tray removed entirely — just a themed desktop and a real terminal, nothing sitting idle in the background.</p>
+              <p>
+                A tuned JWM setup with the traditional panel and tray removed
+                entirely, just a themed desktop and a real terminal, nothing
+                sitting idle in the background.
+              </p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
               </div>
-              <h3>Vantask</h3>
-              <p>A GTK3 application launcher written from scratch for Vantum, built to replace the taskbar rather than imitate it. Still under active development.</p>
+              <h3>Vantyl and Vantask</h3>
+              <p>
+                A GTK3 application launcher and a taskbar written from scratch
+                for Vantum in python, built to replace the taskbar rather than
+                imitate it. Still under active development.
+              </p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polyline points="4 17 10 11 4 5" />
+                  <line x1="12" y1="19" x2="20" y2="19" />
+                </svg>
               </div>
               <h3>Ubuntu Jammy packages</h3>
-              <p>Binary compatibility with Ubuntu 22.04 LTS — install most Ubuntu software without friction, through a package manager that's been fixed to actually work.</p>
+              <p>
+                Binary compatibility with Ubuntu 22.04 LTS — install most Ubuntu
+                software without friction, through a package manager that's been
+                fixed to actually work.
+              </p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
               </div>
               <h3>A curated, minimal app set</h3>
-              <p>Thunar, urxvt, epdfview, mpv, galculator, GParted — enough to be useful, nothing bundled just to fill a menu.</p>
+              <p>
+                Thunar, urxvt, epdfview, galculator, GParted. System necessities
+                are just shell scripts in <code>gtk-dialog</code>
+              </p>
             </div>
           </div>
         </div>
@@ -104,52 +204,82 @@
           <div class="features">
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  />
+                </svg>
               </div>
               <h3>Thunar</h3>
-              <p>File manager. Handles mounting, browsing, and basic archive extraction without pulling in a full desktop stack.</p>
+              <p>
+                File manager. Handles mounting, browsing, and basic archive
+                extraction without pulling in a full desktop stack.
+              </p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polyline points="4 17 10 11 4 5" />
+                  <line x1="12" y1="19" x2="20" y2="19" />
+                </svg>
               </div>
               <h3>urxvt</h3>
-              <p>The default terminal. Genuinely rxvt-unicode, not a shell script pretending to be one.</p>
+              <p>
+                The default terminal. Lightweight, customized for ease of use.
+              </p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
               </div>
               <h3>epdfview</h3>
-              <p>Lightweight PDF viewer, GTK-based. No Motif, no dated toolkit look.</p>
+              <p>
+                Lightweight PDF viewer, GTK-based. No Motif, no dated toolkit
+                look.
+              </p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon points="23 7 16 12 23 17 23 7" />
+                  <rect x="1" y="5" width="15" height="14" rx="2" />
+                </svg>
               </div>
-              <h3>mpv</h3>
-              <p>Handles video and audio playback. Minimal UI, low overhead, actively maintained upstream.</p>
+              <h3>Firefox Portable</h3>
+              <p>
+                Modern enough to handle most websites, ligthweight enough to
+                feel fast
+              </p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <rect x="4" y="2" width="16" height="20" rx="2" />
+                  <line x1="8" y1="6" x2="16" y2="6" />
+                  <line x1="8" y1="10" x2="16" y2="10" />
+                  <line x1="8" y1="14" x2="12" y2="14" />
+                </svg>
               </div>
               <h3>galculator</h3>
               <p>Basic and scientific calculator, GTK, small footprint.</p>
             </div>
             <div class="feature">
               <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <line x1="2" y1="10" x2="22" y2="10" />
+                </svg>
               </div>
               <h3>GParted</h3>
-              <p>Partition editor. GTK-only, no GNOME desktop dependency despite the name.</p>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-              </div>
-              <h3>Freedoom + Chocolate Doom</h3>
-              <p>A free IWAD and a faithful source port. No self-respecting minimal distro ships without it.</p>
+              <p>
+                Partition editor. GTK-only, no GNOME desktop dependency despite
+                the name.
+              </p>
             </div>
           </div>
         </div>
@@ -165,41 +295,11 @@
               <span class="terminal-title">shell</span>
             </div>
             <div class="terminal-body">
-              <span class="t-comment"># write the ISO to a USB drive</span><br>
-              <span class="t-cmd">dd if=vantum-0.01-beta.iso of=/dev/sdX bs=4M status=progress</span><br>
+              <span class="t-comment"># Clone the Repo</span><br />
+              <span class="t-cmd"
+                >git clone https://github.com/Hammad-hab/Vantum</span
+              ><br />
               <span class="t-gap"></span>
-              <span class="t-comment"># or boot directly in a VM</span><br>
-              <span class="t-cmd">qemu-system-x86_64 -cdrom vantum-0.01-beta.iso -m 2G</span><br>
-              <span class="t-gap"></span>
-              <span class="t-out"><span class="t-ok">✓</span> boots in under 10 seconds on most hardware</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- roadmap -->
-        <div class="section">
-          <div class="section-label">Roadmap to 1.0</div>
-          <div class="terminal">
-            <div class="terminal-bar">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <span class="terminal-title">TODO.md</span>
-            </div>
-            <div class="terminal-body">
-              <span class="t-comment"># persistence</span><br>
-              <span class="t-cmd">[ ] automatic persistent install — no save-file prompt, no manual setup</span><br>
-              <span class="t-cmd">[ ] hide frugal / universal install options once persistence lands</span><br>
-              <span class="t-gap"></span>
-              <span class="t-comment"># fixes</span><br>
-              <span class="t-out"><span class="t-ok">✓</span> hardware compatibility — boots on real machines</span><br>
-              <span class="t-cmd">[ ] faster boot (hardware-dependent, low priority)</span><br>
-              <span class="t-gap"></span>
-              <span class="t-comment"># desktop shell</span><br>
-              <span class="t-out"><span class="t-ok">✓</span> tray removed, GTK-powered desktop in its place</span><br>
-              <span class="t-cmd">[ ] fix Vantask window rendering</span><br>
-              <span class="t-cmd">[ ] stop Vantyl from appearing in the taskbar</span><br>
-              <span class="t-cmd">[ ] resolve Conky transparency (compositor-dependent)</span>
             </div>
           </div>
         </div>
@@ -210,19 +310,33 @@
           <div class="features">
             <div class="feature">
               <h3>Why another Puppy fork?</h3>
-              <p>Most Puppy variants keep the traditional desktop shell. Vantum rebuilds the shell itself — no tray, a custom launcher, and a package manager that's actually been debugged end to end.</p>
+              <p>
+                Most Puppy variants keep the traditional desktop shell. Vantum
+                rebuilds the shell itself — no tray, a custom launcher, and a
+                package manager that's actually been debugged end to end.
+              </p>
             </div>
             <div class="feature">
               <h3>Is it stable?</h3>
-              <p>It's a 0.01 Beta. Core system and package management are solid; the desktop shell (Vantask, Conky) still has open bugs listed in the roadmap above.</p>
+              <p>
+                It's a 0.01 Beta. Core system and package management are solid;
+                the desktop shell (Vantask, Conky) still has open bugs listed in
+                the roadmap above.
+              </p>
             </div>
             <div class="feature">
               <h3>What hardware does it target?</h3>
-              <p>Old, low-spec machines — the kind most modern distros have quietly stopped supporting well.</p>
+              <p>
+                Old, low-spec machines — the kind most modern distros have
+                quietly stopped supporting well.
+              </p>
             </div>
             <div class="feature">
               <h3>Does it save my files between boots?</h3>
-              <p>Not automatically yet — that's the single biggest item left before 1.0. See the roadmap.</p>
+              <p>
+                Not automatically yet — that's the single biggest item left
+                before 1.0. See the roadmap.
+              </p>
             </div>
           </div>
         </div>
@@ -232,25 +346,46 @@
           <div class="section-label">About</div>
           <div class="about-strip">
             <div class="about-strip-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
             </div>
             <div>
               <h3>Built as a learning project</h3>
               <p>
-                Vantum is a custom Puppy Linux build assembled using Woof-CE against Ubuntu Jammy packages.
-                The entire build process — including every failure and fix — is documented in the repository.
-                This is a 0.01 Beta: persistence is still being built, and a couple of desktop-shell bugs are
-                open. Not a finished product. A thing that's being made, in the open.
+                Vantum is a custom Puppy Linux build assembled using Woof-CE
+                against Ubuntu Jammy packages. The entire build process
+                (including every failure and fix) is documented in the
+                repository. This is a 0.01 Beta: persistence is still being
+                built, and a couple of desktop-shell bugs are open. Not a
+                finished product. A thing that's being made, in the open.
               </p>
-              <a href="https://github.com/Hammad-hab/BeasOS" target="_blank">
-                Read the build log
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              <a
+                href="https://github.com/Hammad-hab/Vantum/blob/main/DEBUG.md"
+                target="_blank"
+              >
+                Read the debug log
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
