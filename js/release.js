@@ -83,6 +83,7 @@ async function loadReleases(){
       entry.innerHTML = `
         <div class="node"></div>
         <div class="entry-head">
+          ${assetsHtml}
           <span class="tag">${release.tag_name || "untagged"}</span>
           ${idx === 0 ? `<span class="latest-pill">Latest</span>` : ""}
           ${release.name && release.name !== release.tag_name ? `<span class="rname">${release.name}</span>` : ""}
@@ -92,7 +93,6 @@ async function loadReleases(){
         </div>
         <div class="panel">
           <div class="markdown">${marked.parse(release.body || "_No release notes provided._")}</div>
-          ${assetsHtml}
         </div>
       `;
 
